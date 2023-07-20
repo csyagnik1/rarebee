@@ -1,0 +1,42 @@
+@media screen and (max-width: 767px){
+    .main-text-1{
+        margin-top: 40%;
+        font-size: 2em;
+        
+        font-weight: bolder;
+        letter-spacing: 10px;
+        font-family: 'Segoe UI';
+       
+        width: 70%;
+        border-right: 5px solid;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: 
+        typing 2s infinite alternate,
+        cursor 2s step-end infinite alternate;
+      
+      }
+
+
+      .header-item-1>a{
+        display: none;
+    
+      }
+
+      .header-item-1{
+  
+        display: flex;
+        display: row;
+    
+   
+       z-index: 1200;
+       position: sticky;
+      
+       top: 0;
+       left: 0;
+       background-color: rgba(0, 0,0, .3);
+      
+      }
+
+    
+}
