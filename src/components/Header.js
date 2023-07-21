@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useDispatch } from 'react-redux';
 // import './header.css';
 
+
 function Header() {
 
 
@@ -20,6 +21,15 @@ function Header() {
 
   window.addEventListener('scroll', changeBackground);
 
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
 
 
 
@@ -39,7 +49,16 @@ function Header() {
         <a href="productgallery.html">Product Gallery</a>
 
         <span className='hamburger-image'>
-          <img src="images/icons8-hamburger-menu-50.png" width="50px" height="50px" />
+         {isHovered ?(<img
+          src="images/cross-image.png"
+          width="90px" height="90px"
+         
+          onClick={handleMouseLeave}
+        />):(<img
+          src="images/icons8-hamburger-menu-50.png"
+          width="90px" height="90px"
+          onClick={handleMouseEnter}
+        />)}
         </span>
       </div>
 

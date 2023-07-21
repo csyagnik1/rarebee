@@ -1,6 +1,7 @@
 import React from 'react';
 import { Fragment } from 'react';
 
+
 import 'react-multi-carousel/lib/styles.css';
 
 
@@ -24,6 +25,7 @@ function Main() {
         items: 1
     }
 };
+
 
 
 
