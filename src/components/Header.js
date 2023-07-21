@@ -7,18 +7,18 @@ import { useDispatch } from 'react-redux';
 function Header() {
 
 
-const [navbar, setNavbar] = useState(false);
-const changeBackground = () => {
-  if(window.scrollY >= 80){
+  const [navbar, setNavbar] = useState(false);
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
       setNavbar(true);
       console.log("hhgqohgoqhg")
-  }
-  else{
+    }
+    else {
       setNavbar(false);
-  }
-};
+    }
+  };
 
-window.addEventListener('scroll', changeBackground);
+  window.addEventListener('scroll', changeBackground);
 
 
 
@@ -26,22 +26,26 @@ window.addEventListener('scroll', changeBackground);
   return (
     <Fragment>
 
-    
-     
-   <div className= 'header-item-1'> 
-   <img src="images/RareBee Lifesciences logo.png" width="90px" height="90px"/>    
 
-  <a href="aboutus.html">About Us</a>
-  <a href="contactus.html">Contact Us</a>
-  <a href="productlist.html">Product List</a>
-  <a href="quality.html">Quality</a>
-  <a href="productgallery.html">Product Gallery</a>
- 
-</div>
 
-</Fragment>
-     
-    
+      <div className='header-item-1'>
+        <img src="images/RareBee Lifesciences logo.png" width="90px" height="90px" />
+        
+
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="productlist.html">Product List</a>
+        <a href="quality.html">Quality</a>
+        <a href="productgallery.html">Product Gallery</a>
+
+        <span className='hamburger-image'>
+          <img src="images/icons8-hamburger-menu-50.png" width="50px" height="50px" />
+        </span>
+      </div>
+
+    </Fragment>
+
+
   )
 }
 

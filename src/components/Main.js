@@ -1,8 +1,8 @@
 import React from 'react';
 import { Fragment } from 'react';
-import Carousel from 'react-multi-carousel';
+
 import 'react-multi-carousel/lib/styles.css';
-import '../MobileApp.css'
+
 
 function Main() {
   const responsive = {
@@ -46,9 +46,7 @@ function Main() {
         </div>
 
 
-   <div className='main-container-level-2'>
-          AGOQHGQOPHGQOHGOQH
-          </div>
+
         
     </div>
 
