@@ -40,7 +40,7 @@ function Header() {
 
       <div className='header-item-1'>
         <img src="images/RareBee Lifesciences logo.png" width="90px" height="90px" />
-        
+
 
         <a href="aboutus.html">About Us</a>
         <a href="contactus.html">Contact Us</a>
@@ -49,17 +49,39 @@ function Header() {
         <a href="productgallery.html">Product Gallery</a>
 
         <span className='hamburger-image'>
-         {isHovered ?(<img
-          src="images/cross-image.png"
-          width="90px" height="90px"
-         
-          onClick={handleMouseLeave}
-        />):(<img
-          src="images/icons8-hamburger-menu-50.png"
-          width="90px" height="90px"
-          onClick={handleMouseEnter}
-        />)}
+          {isHovered ? (<img
+            src="images/cross-image.png"
+            width="90px" height="90px"
+
+            onClick={handleMouseLeave}
+          />) : (<img
+            src="images/icons8-hamburger-menu-50.png"
+            width="90px" height="90px"
+            onClick={handleMouseEnter}
+          />)}
         </span>
+      </div>
+      <div className='hamburger-item-1'>
+
+
+        <div>
+          <a href="aboutus.html">About Us</a>
+        </div>
+        <div>
+          <a href="contactus.html">Contact Us</a>
+        </div>
+        <div>
+          <a href="productlist.html">Product List</a>
+        </div>
+        <div>
+          <a href="quality.html">Quality</a>
+        </div>
+
+        <div>
+          <a href="productgallery.html">Product Gallery</a>
+        </div>
+
+
       </div>
 
     </Fragment>
