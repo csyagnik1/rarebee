@@ -57,10 +57,14 @@
         margin-top: 10px;
         
       }
-  .hamburger-item-1{
-    display: block;
-  }
 
+
+.hamburger-item-1{
+  display: none;
+  position: sticky;
+  z-index: 1200;
+  background-color: azure;
+}
 
     
 }
